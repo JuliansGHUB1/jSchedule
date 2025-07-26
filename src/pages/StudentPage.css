@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.student-page {
+  max-width: 768px;            /* Similar to max-w-3xl */
+  margin: 20px auto;           /* Center horizontally, small top margin */
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-page h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}

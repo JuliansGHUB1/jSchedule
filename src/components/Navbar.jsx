@@ -1,21 +1,22 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
+import "./Navbar.css"; // we'll create this CSS file
 
 export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="flex justify-between items-center bg-blue-600 text-white px-6 py-3">
-      <h1 className="text-lg font-bold">Scheduler POC</h1>
-      <div className="space-x-4">
+    <nav className="navbar">
+      <h1 className="navbar-title">Scheduler POC</h1>
+      <div className="navbar-links">
         <Link
           to="/"
-          className={`hover:underline ${location.pathname === '/' ? 'font-semibold' : ''}`}
+          className={location.pathname === "/" ? "active" : ""}
         >
           Student Submission
         </Link>
         <Link
           to="/admin"
-          className={`hover:underline ${location.pathname === '/admin' ? 'font-semibold' : ''}`}
+          className={location.pathname === "/admin" ? "active" : ""}
         >
           Admin Login
         </Link>
